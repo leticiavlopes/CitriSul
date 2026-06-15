@@ -139,15 +139,12 @@ Além disso:
 ---
 
 ## 📁 5. Estrutura do Projeto
-citricultura-pr/
-│
-├── index.html # Estrutura semântica do site
-├── style.css # Folhas de estilos (design responsivo e tema)
-├── script.js # Lógica de interatividade e renderização dinâmica
-├── README.md # Documentação do projeto (este arquivo)
-│
-└── img/ # Recursos visuais
-├── LogoSiteCitrisul.png
-├── HeaderImagem.png
-├── PlanoDeFundoInicio.jpg
-└── InicioImagemDoPeAMesa.jpg
+. 
+├── index.html         # Estrutura principal da página web
+├── style.css          # Folha de estilos CSS para o design da aplicação
+├── script.js          # Lógica JavaScript para interatividade e funcionalidades
+└── img/               # Diretório para imagens do projeto
+    ├── LogoSiteCitrisul.png
+    ├── PlanoDeFundoInicio.jpg
+    ├── InicioImagemDoPeAMesa.jpg
+    ├── ... (outras imagens)
