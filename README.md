@@ -65,3 +65,13 @@ Nenhum framework ou biblioteca externa (como Bootstrap, React ou jQuery) foi uti
 ---
 
 ## 📁 Estrutura de Arquivos
+/
+├── index.html # Página principal do site
+├── style.css # Estilos globais, responsivos e modo alto contraste
+├── script.js # Dados dinâmicos, interações e acessibilidade
+├── img/ # Diretório de imagens do projeto
+│ ├── LogoSiteCitrisul.png
+│ ├── HeaderImagem.png
+│ ├── PlanoDeFundoInicio.jpg
+│ └── InicioImagemDoPeAMesa.jpg
+└── README.md # Este arquivo de documentação
