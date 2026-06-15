@@ -139,12 +139,11 @@ Além disso:
 ---
 
 ## 📁 5. Estrutura do Projeto
-. 
-├── index.html         # Estrutura principal da página web
-├── style.css          # Folha de estilos CSS para o design da aplicação
-├── script.js          # Lógica JavaScript para interatividade e funcionalidades
-└── img/               # Diretório para imagens do projeto
-    ├── LogoSiteCitrisul.png
-    ├── PlanoDeFundoInicio.jpg
-    ├── InicioImagemDoPeAMesa.jpg
-    ├── ... (outras imagens)
+├── index.html # Estrutura semântica e conteúdo principal
+├── style.css # Estilos, variáveis CSS, responsividade e modo de alto contraste
+├── script.js # Lógica de renderização dinâmica, acessibilidade e animações
+└── img/ # Recursos visuais
+├── LogoSiteCitrisul.png
+├── HeaderImagem.png
+├── PlanoDeFundoInicio.jpg
+└── InicioImagemDoPeAMesa.jpg
