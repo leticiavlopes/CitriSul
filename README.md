@@ -139,6 +139,7 @@ Conteúdo Estruturado
 ---
 
 ## 📁 Estrutura do Projeto
+```
 ├── index.html # Estrutura semântica e conteúdo principal
 ├── style.css # Estilos, variáveis CSS, responsividade e modo de alto contraste
 ├── script.js # Lógica de renderização dinâmica, acessibilidade e animações
@@ -147,7 +148,7 @@ Conteúdo Estruturado
 ├── HeaderImagem.png
 ├── PlanoDeFundoInicio.jpg
 └── InicioImagemDoPeAMesa.jpg
-
+```
 
 ---
 
