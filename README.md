@@ -1,102 +1,141 @@
-# CitriSul
-# Agro Forte, Futuro Sustentável – SENAR/PR
+# 🍊 Citricultura PR — Agro Forte, Futuro Sustentável
 
-**Site institucional para o concurso temático do SENAR/PR, com foco na valorização do pequeno produtor rural, no fortalecimento do associativismo e na divulgação da citricultura sustentável da região de Pinhão, Paraná.**
+> **Concurso Agrinho 2026 — SENAR/PR**  
+> Tema: *"Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente"*
 
----
-
-## 📋 Escopo do Projeto
-
-Esta aplicação web foi desenvolvida como parte do concurso **"Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente"**, promovido pelo SENAR/PR. O objetivo central do site é apresentar, de forma informativa e visualmente envolvente, a cadeia produtiva da tangerina no estado do Paraná — com especial destaque para o município de **Pinhão** — evidenciando como a agricultura familiar, aliada ao cooperativismo e a práticas sustentáveis, pode gerar desenvolvimento econômico e preservação ambiental.
-
-O conteúdo do site percorre temas como:
-
-- A diversidade de variedades da tangerina e sua classificação botânica.
-- O panorama da produção paranaense e sua posição no cenário nacional.
-- As particularidades edafoclimáticas de Pinhão que favorecem a citricultura.
-- O papel transformador do **associativismo** e do **cooperativismo** para o pequeno produtor.
-- As etapas do cultivo e os tratos culturais envolvidos na produção.
-- Práticas sustentáveis de manejo, adubação e controle fitossanitário.
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)](https://developer.mozilla.org/docs/Web/HTML)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)](https://developer.mozilla.org/docs/Web/CSS)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)](https://developer.mozilla.org/docs/Web/JavaScript)
+[![Acessibilidade](https://img.shields.io/badge/Acessibilidade-WCAG_2.1-005A9C)](https://www.w3.org/TR/WCAG21/)
+[![Responsivo](https://img.shields.io/badge/Design-Responsivo-4CAF50)]()
 
 ---
 
-## 🚀 Funcionalidades Implementadas
+## 📖 1. Visão Geral do Projeto
 
-### 🌐 Design Integralmente Responsivo
+Este repositório contém o **site institucional** desenvolvido para o concurso **Agrinho**, promovido pelo **SENAR/PR** (Serviço Nacional de Aprendizagem Rural do Paraná). A aplicação web tem caráter educativo e informativo, sendo voltada à valorização do **pequeno produtor rural paranaense**, ao fortalecimento do **associativismo e cooperativismo** e à divulgação da beleza produtiva dos **pomares do município de Pinhão/PR**.
 
-O layout foi concebido sob o paradigma **Mobile-First**, utilizando **CSS Grid** e **Flexbox** para garantir fluidez e adaptabilidade em diferentes tamanhos de tela — desde smartphones até monitores de alta resolução. A disposição dos elementos é reorganizada automaticamente em breakpoints estratégicos, assegurando legibilidade e usabilidade em qualquer dispositivo.
+A proposta central da aplicação é demonstrar, por meio de conteúdo técnico e visualmente acessível, como a citricultura familiar — especialmente a produção de tangerinas — pode conciliar **alta produtividade**, **renda para a agricultura familiar** e **preservação ambiental**, materializando o tema *"equilíbrio entre produção e meio ambiente"*.
 
-### ♿ Acessibilidade Visual Aprimorada
+### 🎯 Objetivos da Aplicação
 
-O site incorpora recursos de acessibilidade que permitem:
-
-- **Aumento e diminuição global da fonte** — O tamanho do texto pode ser ajustado em tempo real por meio de botões dedicados, com limites mínimos e máximos configurados para preservar a hierarquia visual.
-- **Alternância de Alto Contraste** — Um modo de alto contraste pode ser ativado/desativado, alterando dinamicamente a paleta de cores de toda a interface para combinações de alto contraste (fundo escuro, texto claro), beneficiando usuários com baixa visão ou sensibilidade a determinados esquemas cromáticos. A classe `.high-contrast` é aplicada ao elemento `body` e todas as seções do site respondem adequadamente à troca de tema.
-
-### 📜 Conteúdo Renderizado Dinamicamente
-
-Dados como a tabela de classificação taxonômica, o ranking de produção por estado, os cards de produção, associativismo e variedades, a timeline de etapas e os tratos culturais são armazenados em **arrays de objetos JavaScript** e injetados no DOM no carregamento da página. Essa abordagem:
-
-- Facilita a manutenção e atualização do conteúdo (basta alterar os arrays, sem manipular o HTML).
-- Torna o código mais limpo e modular.
-- Reduz a duplicação de marcação.
-
-### 🎬 Animações de Entrada (Scroll Reveal)
-
-As seções do site utilizam um efeito de **revelação suave ao rolar a página** (scroll reveal). Elementos com a classe `.reveal` são automaticamente exibidos com transição de opacidade e deslocamento vertical quando entram na janela de visualização do usuário, melhorando a experiência de navegação.
-
-### 🧭 Navegação Semântica e Acessível
-
-O HTML emprega **tags semânticas** (`<header>`, `<main>`, `<section>`, `<article>`, `<footer>`, `<nav>`) e **atributos ARIA** (`role`, `aria-label`, `aria-expanded`, `aria-controls`) para garantir compatibilidade com leitores de tela e tecnologias assistivas. O menu de navegação é completamente funcional tanto em desktop quanto em dispositivos móveis (com menu hamburguer).
+- **Educar** o público sobre a cadeia produtiva da tangerina no Paraná;
+- **Valorizar** o pequeno produtor rural como agente fundamental do desenvolvimento territorial;
+- **Incentivar** o associativismo e o cooperativismo como ferramentas de competitividade coletiva;
+- **Divulgar** as condições edafoclimáticas (solo e clima) que tornam Pinhão um *terroir* privilegiado para a citricultura;
+- **Promover** práticas agrícolas sustentáveis, com ênfase em manejo orgânico e biológico.
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## 🌿 2. Tema Aprofundado: Citricultura no Paraná
 
-| Tecnologia   | Descrição                                                                 |
-|--------------|---------------------------------------------------------------------------|
-| **HTML5**    | Estrutura semântica da página, com meta tags para SEO e atributos ARIA.   |
-| **CSS3**     | Estilização completa com variáveis nativas (`:root`), Grid, Flexbox, animações e media queries para responsividade. |
-| **JavaScript (ES6)** | Lógica de renderização dinâmica, controle de acessibilidade (fonte e contraste), menu mobile e scroll reveal. |
-| **Google Fonts** | Fonte tipográfica "Parkinsans" importada para uso nos botões do menu. |
+O tema escolhido para aprofundamento técnico é a **citricultura no Paraná**, com ênfase na produção de **tangerinas** (*Citrus reticulata*) — em especial as variedades **Ponkan, Bergamota, Murcott (Morgote), Mexerica, Mimosa e Dekopon**.
 
-Nenhum framework ou biblioteca externa (como Bootstrap, React ou jQuery) foi utilizado — todo o código é **vanilla**, seguindo boas práticas de componentização e modularidade.
+### 2.1 Pilares Temáticos Abordados
 
----
-## ♿ Detalhamento da Acessibilidade
+| Pilar | Descrição |
+|-------|-----------|
+| 🍊 **Tangerina paranaense** | Classificação taxonômica, variedades, ciclo produtivo e tratos culturais. |
+| 👨‍🌾 **Pequeno produtor rural** | Papel central na agricultura familiar, adaptação à pequena propriedade e acesso a mercados institucionais (PNAE/PAA). |
+| 🤝 **Associativismo/Cooperativismo** | Compra coletiva de insumos, assistência técnica ampliada, comercialização competitiva e troca de saberes. |
+| 🌱 **Sustentabilidade ambiental** | Uso de defensivos biológicos, adubação orgânica integrada e preservação de matas ciliares e polinizadores. |
+| 📍 **Pinhão/PR** | Relevo acidentado, alta amplitude térmica e programa municipal de fruticultura como diferenciais de qualidade. |
 
-### Controles de Acessibilidade
+### 2.2 Destaque Regional
 
-Um botão fixo no canto inferior direito da tela (`A+`) abre um menu com três opções:
-
-- **Aumentar fonte**: incrementa o tamanho da fonte global em 2px, até o máximo de 22px.
-- **Diminuir fonte**: decrementa o tamanho da fonte global em 2px, até o mínimo de 14px.
-- **Alto contraste**: alterna o modo de alto contraste, aplicando estilos específicos que garantem diferenciação cromática adequada para todos os elementos da interface.
-
-### Funcionamento do Modo Alto Contraste
-
-A classe `.high-contrast` é adicionada/removida do `<body>` via JavaScript. As regras CSS correspondentes sobrescrevem as cores originais, garantindo:
-
-- Fundo preto e texto branco para o corpo do documento.
-- Cabeçalho e rodapé com fundo escuro e bordas claras.
-- Botões e links com fundo branco e texto preto.
-- Cartões (`surface-block`) com fundo cinza-escuro e bordas brancas.
-- Marcadores de timeline, barras de ranking e itens de tratos culturais adaptados para o esquema de cores de alto contraste.
+O site apresenta dados concretos da produção estadual — o Paraná responde por **10,9% da produção nacional de tangerina**, integrando o grupo dos quatro maiores produtores do país — e destaca **Cerro Azul** como a Capital Nacional da Ponkan, além do *terroir* único de **Pinhão**, cujas condições climáticas conferem à fruta **doçura acentuada, suculência e coloração alaranjada intensa**.
 
 ---
 
-## 🧩 Considerações Técnicas
+## 💻 3. Tecnologias Front-End Utilizadas
 
-- **Performance:** Por se tratar de um site estático com manipulação leve de DOM, o carregamento é rápido e o consumo de recursos é mínimo.
-- **Manutenibilidade:** O conteúdo textual e os dados dinâmicos estão centralizados nos arrays do arquivo `script.js`, permitindo edições rápidas sem necessidade de alterar a marcação HTML.
-- **Compatibilidade:** O layout responsivo foi testado para as resoluções mais comuns (320px a 1920px) e utiliza `prefers-reduced-motion` para respeitar as preferências de usuários que optam por reduzir animações no sistema operacional.
+O projeto foi desenvolvido exclusivamente com tecnologias **front-end nativas da plataforma web**, sem dependência de *frameworks* ou bibliotecas externas de terceiros, garantindo **leveza**, **performance** e **portabilidade**.
+
+### 3.1 HTML5 (Estrutura Semântica)
+
+- Uso extensivo de **elementos semânticos** (`<header>`, `<main>`, `<section>`, `<article>`, `<footer>`, `<nav>`, `<blockquote>`), favorecendo SEO e interpretação por tecnologias assistivas.
+- Atributos **ARIA** (`role`, `aria-label`, `aria-expanded`, `aria-controls`, `aria-valuenow`, `aria-hidden`) para enriquecer a acessibilidade.
+- Tabelas com `aria-label` descritivas, listas de progresso (`role="progressbar"`) e navegação estruturada por âncoras.
+- Metadados completos (`charset`, `viewport`, `description`) para responsividade e indexação.
+
+### 3.2 CSS3 (Apresentação e Design Responsivo)
+
+- **Variáveis CSS customizadas** (`:root`) para centralização de cores, espaçamentos, tipografia e raios de borda, facilitando manutenção e temas.
+- **Layout moderno** com **CSS Grid** e **Flexbox**, garantindo adaptação fluida entre *mobile*, *tablet* e *desktop*.
+- **Media Queries** com *breakpoints* em `767px` e `768px` para reorganização inteligente dos componentes.
+- **Gradientes**, *mix-blend-mode*, sombras e transições suaves para uma experiência visual refinada.
+- **Importação de tipografia** via Google Fonts (*Parkinsans*) com *fallback* para fontes do sistema.
+- **Suporte a `prefers-reduced-motion`**, respeitando preferências de usuários com sensibilidade a animações.
+- **Modo de alto contraste** implementado via classe `.high-contrast` no `<body>`, com overrides específicos para todos os componentes.
+
+### 3.3 JavaScript Vanilla (Interatividade)
+
+- **JavaScript puro (ES6+)**, sem bibliotecas externas, reduzindo o *bundle* e eliminando dependências de build.
+- Manipulação eficiente do DOM via `document.querySelector`, `addEventListener` e *template literals*.
+- **Renderização dinâmica** de seções (taxonomia, ranking de produção, cards, linha do tempo, tratos culturais) a partir de **estruturas de dados em JSON** (`const`), separando claramente dados de apresentação.
+- **Animações de *scroll reveal*** implementadas com `IntersectionObserver` simplificado via `getBoundingClientRect()`.
+- **Menu hambúrguer** acessível com controle de `aria-expanded`.
+- **Menu de acessibilidade flutuante** com funções para:
+  - Aumentar/diminuir tamanho da fonte (faixa de 14px a 22px);
+  - Alternar modo de alto contraste.
+- Persistência do estado de fonte via variável em tempo de execução.
+
+### 3.4 Tipografia e Paleta Cromática
+
+| Elemento | Valor |
+|----------|-------|
+| Fonte principal | *Segoe UI, Roboto, system-ui, sans-serif* |
+| Fonte de destaque | *Parkinsans* (Google Fonts) |
+| Cor de fundo | `#16222E` (azul-noite) |
+| Cor do texto | `#F6D896` (dourado suave) |
+| Cor de contorno/destaque | `#CC7630` (laranja tangerina) |
+| Cor de cartões | `#1E2D3D` (azul-acinzentado) |
+
+A paleta remete diretamente às cores do **pôr do sol no campo** e à **casca da tangerina**, estabelecendo identidade visual coerente com o tema rural.
 
 ---
 
-## 📜 Licença
+## ✨ 4. Funcionalidades Implementadas
 
-Este projeto foi desenvolvido exclusivamente para fins de participação no concurso **"Agro forte, futuro sustentável"** promovido pelo SENAR/PR.
+### 4.1 Design Integralmente Responsivo
+
+O site adota a filosofia **mobile-first** com aprimoramentos progressivos:
+
+- **Menu de navegação adaptativo**: em telas pequenas, transforma-se em menu hambúrguer expansível; em telas médias e grandes, exibe-se horizontalmente.
+- **Grids fluidos**: as seções de cards (produção, variedades, associativismo, tratos culturais) reorganizam-se automaticamente conforme o espaço disponível.
+- **Hero section reconfigurável**: o bloco inicial alterna entre layout empilhado (mobile) e lado a lado (desktop).
+- **Imagens otimizadas**: uso de `object-fit: cover` e alturas máximas para preservar proporções em qualquer resolução.
+- **Tipografia escalável**: baseada em `rem`, permitindo redimensionamento proporcional.
+
+### 4.2 Recursos de Acessibilidade Visual
+
+O projeto implementa um **painel de acessibilidade fixo** (canto inferior direito), oferecendo:
+
+| Recurso | Descrição |
+|---------|-----------|
+| 🔤 **Aumentar fonte** | Incrementa o tamanho base em 2px (até 22px). |
+| 🔡 **Diminuir fonte** | Reduz o tamanho base em 2px (mínimo 14px). |
+| 🌓 **Alto contraste** | Alterna para fundo preto, texto branco e contornos brancos, atendendo a usuários com baixa visão ou fotofobia. |
+
+Além disso:
+
+- Todos os elementos interativos possuem **`aria-label`** descritivos.
+- O menu de acessibilidade utiliza `role="dialog"` e controla `aria-expanded`.
+- A linha do tempo e as barras de progresso possuem **roles ARIA apropriados**.
+- O site respeita `prefers-reduced-motion`, desabilitando animações para usuários sensíveis.
+- Hierarquia de títulos (`h1` → `h2` → `h3`) respeitada rigorosamente.
+
+### 4.3 Conteúdo Estruturado
+
+- **Seção Hero** com chamada impactante e CTAs claros.
+- **Classificação taxonômica** da tangerina em tabela dinâmica.
+- **Ranking visual de produção** por estado com barras proporcionais.
+- **Cards informativos** sobre produção, associativismo e variedades.
+- **Linha do tempo vertical** das etapas produtivas.
+- **Grid de tratos culturais** com ícones representativos.
+- **Bloco de sustentabilidade** com três eixos (defensivos, adubação, impacto).
+- **Seção de créditos** destacando a colaboração técnica.
 
 ---
 
-**Desenvolvido com foco em boas práticas de acessibilidade, responsividade e valorização do agro paranaense.** 🍊
+## 📁 5. Estrutura do Projeto
