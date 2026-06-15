@@ -11,7 +11,7 @@
 
 ---
 
-## 📖 1. Visão Geral do Projeto
+## 📖 Visão Geral do Projeto
 
 Este repositório contém o **site institucional** desenvolvido para o concurso **Agrinho**, promovido pelo **SENAR/PR** (Serviço Nacional de Aprendizagem Rural do Paraná). A aplicação web tem caráter educativo e informativo, sendo voltada à valorização do **pequeno produtor rural paranaense**, ao fortalecimento do **associativismo e cooperativismo** e à divulgação da beleza produtiva dos **pomares do município de Pinhão/PR**.
 
@@ -27,11 +27,11 @@ A proposta central da aplicação é demonstrar, por meio de conteúdo técnico 
 
 ---
 
-## 🌿 2. Tema Aprofundado: Citricultura no Paraná
+## 🌿 Tema Aprofundado: Citricultura no Paraná
 
 O tema escolhido para aprofundamento técnico é a **citricultura no Paraná**, com ênfase na produção de **tangerinas** (*Citrus reticulata*) — em especial as variedades **Ponkan, Bergamota, Murcott (Morgote), Mexerica, Mimosa e Dekopon**.
 
-### 2.1 Pilares Temáticos Abordados
+### Pilares Temáticos Abordados
 
 | Pilar | Descrição |
 |-------|-----------|
@@ -41,13 +41,13 @@ O tema escolhido para aprofundamento técnico é a **citricultura no Paraná**, 
 | 🌱 **Sustentabilidade ambiental** | Uso de defensivos biológicos, adubação orgânica integrada e preservação de matas ciliares e polinizadores. |
 | 📍 **Pinhão/PR** | Relevo acidentado, alta amplitude térmica e programa municipal de fruticultura como diferenciais de qualidade. |
 
-### 2.2 Destaque Regional
+### Destaque Regional
 
 O site apresenta dados concretos da produção estadual — o Paraná responde por **10,9% da produção nacional de tangerina**, integrando o grupo dos quatro maiores produtores do país — e destaca **Cerro Azul** como a Capital Nacional da Ponkan, além do *terroir* único de **Pinhão**, cujas condições climáticas conferem à fruta **doçura acentuada, suculência e coloração alaranjada intensa**.
 
 ---
 
-## 💻 3. Tecnologias Front-End Utilizadas
+## 💻 Tecnologias Front-End Utilizadas
 
 O projeto foi desenvolvido exclusivamente com tecnologias **front-end nativas da plataforma web**, sem dependência de *frameworks* ou bibliotecas externas de terceiros, garantindo **leveza**, **performance** e **portabilidade**.
 
@@ -58,7 +58,7 @@ O projeto foi desenvolvido exclusivamente com tecnologias **front-end nativas da
 - Tabelas com `aria-label` descritivas, listas de progresso (`role="progressbar"`) e navegação estruturada por âncoras.
 - Metadados completos (`charset`, `viewport`, `description`) para responsividade e indexação.
 
-### 3.2 CSS3 (Apresentação e Design Responsivo)
+### CSS3 (Apresentação e Design Responsivo)
 
 - **Variáveis CSS customizadas** (`:root`) para centralização de cores, espaçamentos, tipografia e raios de borda, facilitando manutenção e temas.
 - **Layout moderno** com **CSS Grid** e **Flexbox**, garantindo adaptação fluida entre *mobile*, *tablet* e *desktop*.
@@ -68,7 +68,7 @@ O projeto foi desenvolvido exclusivamente com tecnologias **front-end nativas da
 - **Suporte a `prefers-reduced-motion`**, respeitando preferências de usuários com sensibilidade a animações.
 - **Modo de alto contraste** implementado via classe `.high-contrast` no `<body>`, com overrides específicos para todos os componentes.
 
-### 3.3 JavaScript Vanilla (Interatividade)
+### JavaScript Vanilla (Interatividade)
 
 - **JavaScript puro (ES6+)**, sem bibliotecas externas, reduzindo o *bundle* e eliminando dependências de build.
 - Manipulação eficiente do DOM via `document.querySelector`, `addEventListener` e *template literals*.
@@ -80,7 +80,7 @@ O projeto foi desenvolvido exclusivamente com tecnologias **front-end nativas da
   - Alternar modo de alto contraste.
 - Persistência do estado de fonte via variável em tempo de execução.
 
-### 3.4 Tipografia e Paleta Cromática
+### Tipografia e Paleta Cromática
 
 | Elemento | Valor |
 |----------|-------|
@@ -95,9 +95,9 @@ A paleta remete diretamente às cores do **pôr do sol no campo** e à **casca d
 
 ---
 
-## ✨ 4. Funcionalidades Implementadas
+## ✨ Funcionalidades Implementadas
 
-### 4.1 Design Integralmente Responsivo
+### Design Integralmente Responsivo
 
 O site adota a filosofia **mobile-first** com aprimoramentos progressivos:
 
@@ -125,7 +125,7 @@ Além disso:
 - O site respeita `prefers-reduced-motion`, desabilitando animações para usuários sensíveis.
 - Hierarquia de títulos (`h1` → `h2` → `h3`) respeitada rigorosamente.
 
-### 4.3 Conteúdo Estruturado
+Conteúdo Estruturado
 
 - **Seção Hero** com chamada impactante e CTAs claros.
 - **Classificação taxonômica** da tangerina em tabela dinâmica.
@@ -147,3 +147,20 @@ Além disso:
 ├── HeaderImagem.png
 ├── PlanoDeFundoInicio.jpg
 └── InicioImagemDoPeAMesa.jpg
+
+
+---
+
+## 👨‍🌾 Créditos
+
+> **Marcos Szumilo**
+> *Técnico em Agropecuária, formado e pós-graduado em Gestão Ambiental*
+
+Este site foi elaborado com a colaboração e supervisão de um técnico em agropecuária que atua na Secretaria Municipal de Agricultura, garantindo que as associações rurais permaneçam informadas, formalizadas e produtivas.
+
+---
+
+<p align="center">
+  <strong>Concurso Agrinho — SENAR/PR</strong><br>
+  <em>Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente</em>
+</p>
