@@ -1,1 +1,338 @@
 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Citricultura PR – Agro Forte, Futuro Sustentável</title>
+  <meta name="description" content="Tangerina no Paraná: produção, cooperativismo e sustentabilidade no campo." />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap');
+  </style>
+</head>
+<body>
+  <header class="header" id="topo" role="banner">
+    <div class="header-inner">
+      <div class="header-brand">
+        <a class="logo" href="#inicio" aria-label="Voltar ao início">
+          <img class="logo-img" src="img/LogoSiteCitrisul.png" alt="CitriSul" />
+        </a>
+        <div class="site-title">Da terra à mesa: a força da tangerina paranaense</div>
+      </div>
+      <nav class="navbar" aria-label="Navegação principal">
+        <button class="hamburger" id="menu-toggle" aria-label="Abrir menu" aria-controls="nav-links" aria-expanded="false">☰</button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#inicio" class="nav-btn">Início</a></li>
+          <li><a href="#producao" class="nav-btn">Produção</a></li>
+          <li><a href="#pinhao" class="nav-btn">Pinhão</a></li>
+          <li><a href="#associativismo" class="nav-btn">Associativismo</a></li>
+          <li><a href="#variedades" class="nav-btn">Variedades</a></li>
+          <li><a href="#etapas" class="nav-btn">Etapas</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <button id="accessibility-btn" class="accessibility-fixed" aria-label="Menu de acessibilidade" aria-expanded="false">A+</button>
+  <div id="accessibility-menu" class="accessibility-menu hidden" role="dialog" aria-label="Menu de acessibilidade">
+    <button type="button" onclick="increaseFont()">Aumentar fonte</button>
+    <button type="button" onclick="decreaseFont()">Diminuir fonte</button>
+    <button type="button" id="contrast-btn" onclick="toggleContrast()">Alto contraste</button>
+  </div>
+
+  <main id="inicio">
+    <section class="hero-section reveal" aria-label="Apresentação">
+      <div class="hero-shell">
+        <div class="hero-copy">
+          <span class="eyebrow">Ponkan, bergamota, tangerina, morgote, mimosa…</span>
+          <h1>Tem o aroma que encanta e o sabor que une gerações. Mas será tudo a mesma fruta?</h1>
+          <p class="hero-lead">
+            Descubra como a <strong>tangerina</strong> — em suas diversas variedades, especialmente a Ponkan —
+            fortalece a agricultura familiar no Paraná, impulsiona o cooperativismo e promove um futuro
+            sustentável no campo. Da terra acidentada de Pinhão às mesas de todo o Brasil.
+          </p>
+          <div class="hero-actions">
+            <a class="action-btn" href="#producao">Ver produção</a>
+            <a class="secondary-btn" href="#variedades">Conhecer variedades</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-image-card">
+            <img 
+              src="img/InicioImagemDoPeAMesa.jpg" 
+              alt="Tangerinas frescas: do pé à mesa" 
+              class="hero-card-img"
+            />
+            <div class="hero-image-overlay">
+              <span>Do pé à mesa</span>
+              <strong>Pequenos pomares, grandes conquistas.</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="taxonomia" class="content-section reveal" aria-label="Classificação científica da tangerina">
+      <div class="section-heading">
+        <span class="section-tag">Ciência</span>
+        <h2>Tangerina: <em>Citrus reticulata</em></h2>
+        <p>Antes de entender o poder econômico e social da fruta, vale conhecer quem ela é — do ponto de vista científico.</p>
+      </div>
+      <div class="taxonomia-layout">
+        <div class="surface-block taxonomia-tabela">
+          <h3>Classificação científica</h3>
+          <table class="taxo-table" aria-label="Classificação taxonômica da tangerina">
+            <tbody id="taxonomia-tabela-body"></tbody>
+          </table>
+          <p class="taxo-nota">
+            O epíteto <em>reticulata</em> faz referência à rede de fibras que entremeia os gomos —
+            aquela pelezinha branca que separa cada segmento da polpa.
+          </p>
+        </div>
+        <div class="surface-block taxonomia-texto">
+          <h3>Uma fruta, muitos nomes</h3>
+          <p>
+            No sul do Brasil, ela é chamada de <strong>bergamota</strong>. No resto do país, <strong>tangerina</strong>.
+            As variedades mais conhecidas — Ponkan, Murcott (morgote), Mexerica, Mimosa — são todas
+            pertencentes ao gênero <em>Citrus</em>, família <em>Rutaceae</em>, e compartilham as mesmas
+            características botânicas essenciais: casca facilmente destacável, frutos com segmentos bem definidos
+            e aroma cítrico característico.
+          </p>
+          <p>
+            Originária da Ásia, a tangerina chegou ao Brasil adaptando-se bem ao clima subtropical
+            do Sul e às condições de altitude do interior paranaense. Hoje, é a fruta que mais identifica
+            o pequeno produtor rural do Paraná.
+          </p>
+          <div class="taxo-destaque">
+            <span class="taxo-destaque-icone" aria-hidden="true">🌿</span>
+            <span>A tangerina é a espécie cítrica mais cultivada em pequenas propriedades familiares do Paraná, ocupando <strong>53,7% da área de frutas do estado</strong>.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="producao" class="content-section reveal" aria-label="Produção no Paraná">
+      <div class="section-heading">
+        <span class="section-tag">Produção</span>
+        <h2>A citricultura tem força no Paraná</h2>
+        <p>
+          O volume de tangerina produzido pelos agricultores paranaenses representa <strong>10,9% do total nacional</strong>.
+          O estado integra o grupo dos maiores produtores do país, ao lado de São Paulo (30,9%),
+          Minas Gerais (28%) e Rio Grande do Sul (15,4%).
+        </p>
+      </div>
+      <div class="ranking-bloco surface-block" aria-label="Ranking de produção de tangerina por estado">
+        <h3>Produção nacional de tangerina — participação por estado</h3>
+        <div class="ranking-lista" id="ranking-lista"></div>
+      </div>
+      <div class="cards-grid" id="producao-cards" style="margin-top: var(--spacing-lg);"></div>
+      <div class="surface-block destaque-cerro reveal" style="margin-top: var(--spacing-lg);">
+        <div class="cerro-icone" aria-hidden="true">🏆</div>
+        <div>
+          <h3>Cerro Azul — Capital Nacional da Ponkan</h3>
+          <p>
+            A apenas <strong>90 km de Curitiba</strong>, no Vale do Ribeira, está o município de
+            <strong>Cerro Azul</strong>, reconhecido como a maior produtora de Ponkan do Brasil.
+            A produção da cidade ilustra o potencial da citricultura paranaense: frutas destinadas
+            ao consumo <em>in natura</em>, vendidas para merenda escolar municipal e para mercados locais e regionais.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="pinhao" class="content-section reveal" aria-label="Citricultura em Pinhão-PR">
+      <div class="section-heading">
+        <span class="section-tag">Pinhão – PR</span>
+        <h2>O terroir da tangerina no interior paranaense</h2>
+        <p>Em Pinhão, a natureza criou as condições ideais. O trabalho humano fez o resto.</p>
+      </div>
+      <div class="pinhao-layout">
+        <div class="surface-block pinhao-clima">
+          <h3>🌡️ Clima e relevo favoráveis</h3>
+          <p>
+            O relevo acidentado e a <strong>alta amplitude térmica</strong> — alternância marcante
+            entre calor e frio — de Pinhão criam um microclima que favorece o desenvolvimento
+            da tangerina. O estresse climático controlado faz com que a fruta concentre
+            açúcares, desenvolvendo <strong>doçura acentuada, suculência e coloração alaranjada intensa</strong>
+            — características valorizadas pelos consumidores e pelo mercado.
+          </p>
+        </div>
+        <div class="surface-block pinhao-programa">
+          <h3>🌱 Programa municipal de fruticultura</h3>
+          <p>
+            O município conta com um programa estruturado para fortalecer a fruticultura familiar.
+            Pequenos agricultores passam por <strong>avaliação técnica de aptidão</strong> para o cultivo
+            da tangerina Ponkan e, ao ingressar no programa, recebem:
+          </p>
+          <ul class="lista-programa">
+            <li>Mudas certificadas e selecionadas com <strong>50% de subsídio</strong></li>
+            <li>Treinamentos com técnicos da Secretaria Municipal de Agricultura</li>
+            <li>Assistência técnica periódica ao longo do ciclo de produção</li>
+          </ul>
+          <p>
+            A iniciativa fortalece a cadeia produtiva local, garantindo que o pequeno produtor
+            tenha acesso a tecnologia, suporte e mercado — pilares essenciais para a viabilidade
+            da agricultura familiar.
+          </p>
+        </div>
+        <div class="surface-block pinhao-propriedade">
+          <h3>🏡 Adaptação à pequena propriedade</h3>
+          <p>
+            A tangerina se adapta bem ao modelo das <strong>pequenas propriedades rurais</strong>,
+            característico de Pinhão e de grande parte do interior paranaense. Diferentemente de culturas
+            que exigem grande escala para ser viáveis, a citricultura familiar permite ao produtor iniciar
+            com poucos hectares e expandir gradualmente, assegurando renda estável ao longo dos anos.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="associativismo" class="content-section reveal" aria-label="Associativismo e cooperativismo">
+      <div class="section-heading">
+        <span class="section-tag">Força Coletiva</span>
+        <h2>A associação fortalece o pequeno produtor</h2>
+        <p>
+          O associativismo e o cooperativismo são ferramentas importantes no campo.
+          Trabalhando em associações rurais, produtores que compartilham os mesmos interesses e
+          necessidades ganham acesso a conhecimento, mercados e políticas públicas que, individualmente, dificilmente alcançariam.
+        </p>
+      </div>
+      <div class="surface-block assoc-citacao reveal">
+        <blockquote>
+          "Sozinho, o agricultor pode ir mais rápido. Juntos, os agricultores vão mais longe —
+          e chegam em lugares que nenhum deles chegaria sozinho."
+        </blockquote>
+      </div>
+      <div class="assoc-beneficios reveal">
+        <h3 class="assoc-subtitulo">Por que se associar?</h3>
+        <p>
+          O associativismo amplia a <strong>troca de experiências</strong> entre produtores,
+          facilita o trabalho dos técnicos da assistência rural — que passam a atender mais famílias
+          de forma organizada — e eleva a <strong>competitividade coletiva no mercado</strong>.
+          A escala conjunta permite negociar melhores preços por insumos, acessar programas
+          institucionais como o PNAE (merenda escolar) e o PAA, e até alcançar certificações
+          que abrem portas para exportação.
+        </p>
+      </div>
+      <div class="cards-grid" id="associativismo-cards"></div>
+    </section>
+
+    <section id="variedades" class="content-section reveal" aria-label="Variedades de tangerina">
+      <div class="section-heading">
+        <span class="section-tag">Diversidade</span>
+        <h2>Principais variedades consumidas no Brasil e no Paraná</h2>
+        <p>Cada nome tem sua história e sabor único. Conheça as estrelas dos pomares paranaenses.</p>
+      </div>
+      <div class="cards-grid" id="variedades-cards"></div>
+      <div class="surface-block info-box reveal" id="ponkan-extra">
+        <h3>🏅 A Ponkan — rainha dos pomares paranaenses</h3>
+        <p>
+          A <strong>Ponkan</strong> (<em>Citrus reticulata</em> var. Ponkan) é a variedade mais cultivada
+          no Paraná e uma das mais consumidas no Brasil. De casca grossa e fácil de descascar, com sabor
+          superdoce e perfume inconfundível, ela domina os mercados locais e encanta gerações de consumidores.
+          No estado, destacam-se seleções como <strong>Ponkan IAC</strong>, <strong>Ponkan Gigante</strong>
+          e a tradicional <strong>Ponkan comum</strong> — cada uma com características adaptadas ao
+          clima e ao solo paranaenses.
+        </p>
+        <p>
+          Em Pinhão, a Ponkan encontrou no relevo acidentado e na amplitude térmica local as condições
+          ideais para expressar todo o seu potencial: frutos graúdos, alaranjados, doces e suculentos —
+          prontos para a mesa ou para a merenda escolar.
+        </p>
+      </div>
+    </section>
+
+    <section id="etapas" class="content-section reveal" aria-label="Etapas da produção">
+      <div class="section-heading">
+        <span class="section-tag">Jornada da fruta</span>
+        <h2>Etapas da produção da tangerina</h2>
+        <p>
+          Do preparo do solo até a sua mesa, cada passo exige cuidado, conhecimento técnico
+          e dedicação do agricultor. Quando solo e clima são propícios, a tangerina já produz
+          seus primeiros frutos a partir do <strong>2.º ano após o plantio</strong>,
+          atingindo o pico no <strong>10.º ano</strong> — com potencial de
+          <strong>250 kg por planta ao ano</strong>.
+        </p>
+      </div>
+      <div class="timeline-vertical" id="etapas-timeline"></div>
+      <div class="surface-block tratos-culturais reveal" style="margin-top: var(--spacing-lg);">
+        <h3>🌿 Tratos culturais: o cuidado que faz a diferença</h3>
+        <p>
+          Entre o plantio e a colheita, uma série de práticas — chamadas <strong>tratos culturais</strong> —
+          garante que a planta se desenvolva saudável, produtiva e sustentável. Em Pinhão, os
+          técnicos da Secretaria de Agricultura orientam os produtores associados em cada uma dessas etapas:
+        </p>
+        <div class="tratos-grid" id="tratos-grid"></div>
+      </div>
+    </section>
+
+    <section id="sustentabilidade" class="content-section reveal" aria-label="Sustentabilidade e futuro">
+      <div class="section-heading">
+        <span class="section-tag">Futuro sustentável</span>
+        <h2>Agro forte, futuro sustentável</h2>
+        <p>
+          Equilíbrio entre produção e meio ambiente é a base para que as próximas gerações
+          continuem colhendo os frutos da terra. A citricultura familiar, quando aliada ao
+          associativismo e à assistência técnica qualificada, é um exemplo vivo desse equilíbrio.
+        </p>
+      </div>
+      <div class="sustenta-grid reveal">
+        <div class="surface-block">
+          <h3>🌱 Defensivos orgânicos e biológicos</h3>
+          <p>
+            O manejo fitossanitário em Pinhão prioriza o uso de defensivos orgânicos e biológicos,
+            reduzindo a carga química sobre o solo, as nascentes e a biodiversidade local.
+            O controle biológico de pragas como a mosca-das-frutas é técnica ensinada
+            nas capacitações da Secretaria de Agricultura.
+          </p>
+        </div>
+        <div class="surface-block">
+          <h3>♻️ Adubação orgânica integrada</h3>
+          <p>
+            A aplicação combinada de fertilizantes orgânicos (como compostos e estercos) com
+            insumos minerais — conforme análise de solo — reduz o desperdício, melhora a
+            estrutura do terreno e garante nutrição equilibrada à planta em cada fase do ciclo.
+          </p>
+        </div>
+        <div class="surface-block">
+          <h3>🌍 Pequenas propriedades, grande impacto</h3>
+          <p>
+            A agricultura familiar de base agroecológica preserva matas ciliares, polinizadores
+            e qualidade da água. Pequenos pomares bem manejados produzem mais por hectare com
+            menor impacto ambiental — provando que produção e natureza podem caminhar juntas.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section creditos-section reveal" aria-label="Créditos">
+      <div class="creditos-card">
+        <div class="creditos-icone" aria-hidden="true">🏅</div>
+        <p class="creditos-destaque">
+          Técnico de Agropecuária, formado e pós-graduado em Gestão Ambiental<br>
+          <strong>Marcos Szumilo</strong>
+        </p>
+        <hr class="creditos-divisor" />
+        <p class="creditos-descricao">
+          Este site foi elaborado com a colaboração e a supervisão de um técnico em agropecuária,
+          que atua na Secretaria de Agricultura. Graças ao seu trabalho, as associações permanecem
+          informadas e formalizadas.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="footer-inner">
+      <p class="footer-projeto">
+        Projeto desenvolvido para o concurso <strong>Agro forte, futuro sustentável</strong> – SENAR/PR.<br>
+        Valorizando o pequeno produtor rural, o poder do associativismo e a beleza dos pomares de Pinhão.
+      </p>
+      <p class="footer-copy">&copy; 2026 – Concurso SENAR/PR | Agro Forte, Futuro Sustentável</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
