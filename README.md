@@ -63,15 +63,40 @@ O HTML emprega **tags semânticas** (`<header>`, `<main>`, `<section>`, `<articl
 Nenhum framework ou biblioteca externa (como Bootstrap, React ou jQuery) foi utilizado — todo o código é **vanilla**, seguindo boas práticas de componentização e modularidade.
 
 ---
+## ♿ Detalhamento da Acessibilidade
 
-## 📁 Estrutura de Arquivos
-/
-├── index.html # Página principal do site
-├── style.css # Estilos globais, responsivos e modo alto contraste
-├── script.js # Dados dinâmicos, interações e acessibilidade
-├── img/ # Diretório de imagens do projeto
-│ ├── LogoSiteCitrisul.png
-│ ├── HeaderImagem.png
-│ ├── PlanoDeFundoInicio.jpg
-│ └── InicioImagemDoPeAMesa.jpg
-└── README.md # Este arquivo de documentação
+### Controles de Acessibilidade
+
+Um botão fixo no canto inferior direito da tela (`A+`) abre um menu com três opções:
+
+- **Aumentar fonte**: incrementa o tamanho da fonte global em 2px, até o máximo de 22px.
+- **Diminuir fonte**: decrementa o tamanho da fonte global em 2px, até o mínimo de 14px.
+- **Alto contraste**: alterna o modo de alto contraste, aplicando estilos específicos que garantem diferenciação cromática adequada para todos os elementos da interface.
+
+### Funcionamento do Modo Alto Contraste
+
+A classe `.high-contrast` é adicionada/removida do `<body>` via JavaScript. As regras CSS correspondentes sobrescrevem as cores originais, garantindo:
+
+- Fundo preto e texto branco para o corpo do documento.
+- Cabeçalho e rodapé com fundo escuro e bordas claras.
+- Botões e links com fundo branco e texto preto.
+- Cartões (`surface-block`) com fundo cinza-escuro e bordas brancas.
+- Marcadores de timeline, barras de ranking e itens de tratos culturais adaptados para o esquema de cores de alto contraste.
+
+---
+
+## 🧩 Considerações Técnicas
+
+- **Performance:** Por se tratar de um site estático com manipulação leve de DOM, o carregamento é rápido e o consumo de recursos é mínimo.
+- **Manutenibilidade:** O conteúdo textual e os dados dinâmicos estão centralizados nos arrays do arquivo `script.js`, permitindo edições rápidas sem necessidade de alterar a marcação HTML.
+- **Compatibilidade:** O layout responsivo foi testado para as resoluções mais comuns (320px a 1920px) e utiliza `prefers-reduced-motion` para respeitar as preferências de usuários que optam por reduzir animações no sistema operacional.
+
+---
+
+## 📜 Licença
+
+Este projeto foi desenvolvido exclusivamente para fins de participação no concurso **"Agro forte, futuro sustentável"** promovido pelo SENAR/PR.
+
+---
+
+**Desenvolvido com foco em boas práticas de acessibilidade, responsividade e valorização do agro paranaense.** 🍊
