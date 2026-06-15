@@ -138,7 +138,7 @@ Conteúdo Estruturado
 
 ---
 
-## 📁 5. Estrutura do Projeto
+## 📁 Estrutura do Projeto
 ├── index.html # Estrutura semântica e conteúdo principal
 ├── style.css # Estilos, variáveis CSS, responsividade e modo de alto contraste
 ├── script.js # Lógica de renderização dinâmica, acessibilidade e animações
