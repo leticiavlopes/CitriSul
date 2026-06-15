@@ -1,3 +1,4 @@
+```markdown
 # 🍊 Citricultura PR — Agro Forte, Futuro Sustentável
 
 > **Concurso Agrinho 2026 — SENAR/PR**  
@@ -139,3 +140,107 @@ Além disso:
 ---
 
 ## 📁 5. Estrutura do Projeto
+
+```
+citricultura-pr/
+│
+├── index.html          # Estrutura semântica do site
+├── style.css           # Folhas de estilos (design responsivo e tema)
+├── script.js           # Lógica de interatividade e renderização dinâmica
+├── README.md           # Documentação do projeto (este arquivo)
+│
+└── img/                # Recursos visuais
+    ├── LogoSiteCitrisul.png
+    ├── HeaderImagem.png
+    ├── PlanoDeFundoInicio.jpg
+    └── InicioImagemDoPeAMesa.jpg
+```
+
+---
+
+## 🚀 6. Como Executar o Projeto
+
+O projeto é **100% estático**, não exigindo servidor de aplicação, banco de dados ou processos de *build*.
+
+### 6.1 Execução Local (Simples)
+
+1. Clone ou baixe este repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/citricultura-pr.git
+   cd citricultura-pr
+   ```
+2. Abra o arquivo `index.html` diretamente em qualquer navegador moderno (Chrome, Firefox, Edge, Safari).
+
+### 6.2 Execução via Servidor Local (Recomendado)
+
+Para evitar restrições de CORS em alguns navegadores e simular um ambiente de produção:
+
+**Com Python 3:**
+```bash
+python -m http.server 8000
+```
+
+**Com Node.js (http-server):**
+```bash
+npx http-server -p 8000
+```
+
+**Com PHP:**
+```bash
+php -S localhost:8000
+```
+
+Acesse então `http://localhost:8000` no navegador.
+
+### 6.3 Publicação
+
+O site pode ser hospedado gratuitamente em serviços como:
+- **GitHub Pages**
+- **Netlify**
+- **Vercel**
+- **Cloudflare Pages**
+
+Basta realizar o *deploy* da raiz do repositório.
+
+---
+
+## 🧭 7. Navegação e Seções
+
+O site é organizado em **seções âncora** acessíveis pelo menu principal:
+
+| Seção | Identificador | Conteúdo |
+|-------|---------------|----------|
+| Início | `#inicio` | Apresentação e chamada principal |
+| Produção | `#producao` | Dados da citricultura paranaense |
+| Pinhão | `#pinhao` | *Terroir* e programa municipal |
+| Associativismo | `#associativismo` | Força coletiva e benefícios |
+| Variedades | `#variedades` | Cultivares de tangerina |
+| Etapas | `#etapas` | Ciclo produtivo e tratos culturais |
+
+---
+
+## 🏅 8. Créditos e Colaboração Técnica
+
+Este site foi elaborado com a **colaboração e supervisão técnica** de um profissional formado em **Técnico de Agropecuária**, com pós-graduação em **Gestão Ambiental**, que atua na Secretaria Municipal de Agricultura. Sua expertise garantiu a precisão das informações sobre manejo, tratos culturais, associativismo e sustentabilidade, mantendo as associações rurais informadas e formalizadas.
+
+**Autor do desenvolvimento web:** Marcos Szumilo
+
+---
+
+## 📄 9. Licença
+
+Este projeto foi desenvolvido para fins educativos no âmbito do **Concurso Agrinho — SENAR/PR**. O conteúdo e o código podem ser utilizados para fins didáticos, desde que mantidos os créditos.
+
+---
+
+## 📬 10. Contato
+
+Para dúvidas, sugestões ou contribuições sobre o projeto, entre em contato através do repositório no GitHub por meio de *Issues* ou *Pull Requests*.
+
+---
+
+<p align="center">
+  <strong>🌱 Da terra à mesa: a força da tangerina paranaense 🍊</strong><br>
+  <em>Agro forte, futuro sustentável — Concurso Agrinho 2026</em>
+</p>
+```
